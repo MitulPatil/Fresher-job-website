@@ -10,19 +10,27 @@
         height:360px;
         width:100%;
         object-fit:cover;
+        margin-bottom:16px;
       }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center mt-2 mb-4">FresherJob</h1>
-        <img class="img-fluid" src="/static/job.jpg" alt="" id="job">
+  {% include 'nav.html' %}
+    <h1 class="text-center mt-2 mb-4">FresherJob</h1>
+    <img class="img-fluid" src="/static/job.jpg" alt="" id="job">
+    <div class="container"> 
         <h2 class="text-center">About Us</h2>
+      <div class="row" style="margin-bottom:16px"">
+        <div class="col-md-6">
         <p class="lead">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque est quibusdam eius, totam rem sit quos officia minima ad nostrum natus similique tempora illo expedita consectetur sed unde vel!
           Non magnam maiores numquam. Culpa ad quam, repellendus voluptatibus eos veniam enim quaerat similique iure magni incidunt optio quos hic impedit quis commodi quod. Sit, commodi velit. Incidunt, tempora veritatis!
           Cupiditate ipsam error magnam magni aliquid totam quos, est laborum dolorem, eum rem temporibus veritatis exercitationem. Ullam itaque, quae incidunt quos, dolorem cum ipsa nesciunt vero deleniti expedita, perspiciatis modi.
+          lksdjf sjcjchiscjd fkkdjcoisn;o iuygjef jwyegfi uywgeeiuas uksdhuh uerhr  eheurge ismufgs kjuweb 
         </p>
+        </div>
+        <div class="d-none d-md-block col-md-6"><img src="/static/employee.jpg" style="height:320px;border-radius:8px;" alt=""></div>
+        </div>
         <h2 class="text-center mt-2 mb-4"">Open Possition</h2>
         <div>
           {% for job in jobs %}
@@ -30,9 +38,9 @@
           {% endfor %}
         </div>
         <div class="text-center"">
-          <button class="btn btn-primary btn-lg">Contact Us</button>
-          <p class="mt-4">Copyright 2023, Mitul</p>
+          <a href="mailto:patilmitul1911@gmail.com?subject=Question%20about%20Job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3Center%20question%20here%3E" class="btn btn-primary btn-lg">Contact Us</a>
         </div>
     </div>    
+      <div>{% include 'footer.html' %}</div>
 </body>
 </html>
